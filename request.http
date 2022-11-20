@@ -1,0 +1,25 @@
+GET http://localhost:5000/api/tab-todo/61b4630b1458c4a6bb6fa62a
+Accept: application/json
+
+###
+POST http://localhost:80/api/item
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:5000/api/tab-todo/create/61b4630b1458c4a6bb6fa62a
+Content-Type: application/json
+
+{
+  "title": "Công việc tháng 0021"
+}
+
+###
+POST http://localhost:5000/api/tab-todo/todo/create/61b5c5b72139fd84425d65e2
+Content-Type: application/json
+
+{
+  "title": "Công việc tháng 131",
+  "deadline": "2021-12-12T08:51:09.286+00:00"
+}
