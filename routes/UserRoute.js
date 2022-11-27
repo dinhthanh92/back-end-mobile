@@ -92,7 +92,7 @@ router.post("/reset-password/:userId", async (req, res) => {
             const sendMail = AppUntil.SendEmail(
                 findUser.email,
                 "Reset password destination app",
-                `</div>
+                `<div>
                             <div>
                                 New Password: 
                                 <h3>${password}</h3>
